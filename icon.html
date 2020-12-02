@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #ctverecek {
+            height: 10px;
+            width: 10px;
+            background-color: blue;
+            animation: anim 2s linear infinite;
+        }
+        @keyframes anim{
+            0% {
+                transform: translateX(-100px) scale(1);
+            }
+            50%{
+                transform: translateX(0px) scale(1.5);
+            }
+            100% {
+                transform: translateX(100px) scale(2);
+            }
+        }
+    </style>
+    <title>Icon</title>
+</head>
+<body>
+    <div id="ctverecek">
+    </div>
+</body>
+</html>
